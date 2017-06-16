@@ -1,1 +1,14 @@
-{{yield}}
+More details about This restaurant!
+<h1>{{restaurant.name}}</h1> Category: {{restaurant.category}}
+<br> Founded on : {{restaurant.dateOpened}}
+<br> Website: <a href='#'>{{restaurant.website}}</a>
+<br> Phone no: {{restaurant.phone}} Located in {{restaurant.locationName}}, here something about them.
+<br>
+<b>{{restaurant.shortDescription}}</b>
+<br> {{restaurant.description}}
+<br><img src={{restaurant.image}} alt=restaurant.name>
+{{#if inFavorites}}
+<br><button class="btn btn-submit" {{action 'removeFromFavorites' restaurant}}>Remove from favorites?</button>
+{{else}}
+<br><button class="btn btn-submit" {{action 'addToFavorites' restaurant}}>Add to favorites?</button>
+{{/if}}

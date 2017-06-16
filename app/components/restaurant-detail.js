@@ -10,6 +10,7 @@ export default Ember.Component.extend({
     },
     removeFromFavorites(restaurant){
       this.get('favoriteList').pop(restaurant);
+      this.set('inFavorites',false)
     }
   }
 });

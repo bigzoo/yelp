@@ -21,7 +21,7 @@ export default Ember.Component.extend({
         description: this.get('description'),
         rating: this.get('rating'),
         timeCreated: Date(),
-        review: this.get('restaurant')
+        restaurant: this.get('restaurant')
       };
       this.set('description',''),
       this.set('rating',''),

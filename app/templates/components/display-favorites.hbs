@@ -1,4 +1,6 @@
 <b>Favorite Restaurants!</b>
+<br><br>
 {{#each favoriteList.restaurants as |restaurant|}}
-  {{restaurant.name}} in {{restaurant.locationName}}
+  <b>{{restaurant.name}}</b> in {{restaurant.locationName}}
+  <br>
 {{/each}}

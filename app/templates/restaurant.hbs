@@ -7,7 +7,11 @@ More details about This restaurant!
 <b>{{model.shortDescription}}</b>
 <br> {{model.description}}
 <br><img src={{model.image}} alt=model.name>
-<br><button class="btn btn-submit" {{action 'addToFavorites' model}} >Add to favorites?</button>
+{{#if inFavorites}}
+<br><button class="btn btn-submit" {{action 'removeFromFavorites' model}}>Remove from favorites?</button>
+{{else}}
+<br><button class="btn btn-submit" {{action 'addToFavorites' model}}>Add to favorites?</button>
+{{/if}}
 <br><h2>Reviews</h2>
 <ul>
   {{#each model.reviews as |review|}}

@@ -1,1 +1,62 @@
-{{yield}}
+{{#if addNewRestaurant}}
+<h1>New Restaurant</h1>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="name">Restaurant Name</label>
+      {{input value=name id="name"}}
+    </div>
+
+    <div class="form-group">
+      <label for="category">Category</label>
+      {{input value=category id="category"}}
+    </div>
+
+    <div class="form-group">
+      <label for="shortDescription">A short description</label>
+      {{input value=shortDescription id="shortDescription"}}
+    </div>
+
+    <div class="form-group">
+      <label for="description">Long Description</label>
+      {{textarea value=description id="description"}}
+    </div>
+
+    <div class="form-group">
+      <label for="dateOpened">Date Opened</label>
+      {{input type="date" value=dateOpened id="dateOpened"}}
+    </div>
+
+    <div class="form-group">
+      <label for="website">Company Website</label>
+      {{input value=website id="website"}}
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone No</label>
+      {{input type="number" value=phone id="phone"}}
+    </div>
+
+    <div class="form-group">
+      <label for="locationName">Location Name</label>
+      {{input value=locationName id="locationName"}}
+    </div>
+
+    <div class="form-group">
+      <label for="locationLatitude">Location Latitude</label>
+      {{input value=locationLatitude id="locationLatitude"}}
+    </div>
+
+    <div class="form-group">
+      <label for="locationLongitude">Location Longitude</label>
+      {{input value=locationLongitude id="locationLongitude"}}
+    </div>
+
+
+    <button {{action 'saveRestaurant'}}>Save Restaurant</button>
+  </form>
+</div>
+
+{{else}}
+<button {{action 'restaurantFormShow'}}>New Restaurant</button>
+{{/if}}

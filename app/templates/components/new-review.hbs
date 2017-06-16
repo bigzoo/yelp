@@ -1,1 +1,23 @@
-{{yield}}
+{{#if addNewReview}}
+<h1>New Review</h1>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="description">Description</label>
+      {{textarea value=description id="description"}}
+    </div>
+
+    <div class="form-group">
+      <label for="dateOpened">Rating</label>
+      {{input type="number" min=1 max=10 value=rating id="rating" placeholder="Rate between 1 and 10"}}
+    </div>
+
+    <button {{action 'saveNewReview'}}>Submit Review</button>
+    <button {{action 'reset'}}>Reset Form</button>
+    <button {{action 'cancel'}}>Cancel</button>
+  </form>
+</div>
+
+{{else}}
+<button {{action 'reviewFormShow'}}>Add A Restaurant!</button>
+{{/if}}

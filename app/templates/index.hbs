@@ -1,1 +1,10 @@
+List of restaurants!
+<ul>
+{{#each model.restaurants as |restaurant|}}
+  <li>
+    {{restaurant.name}} in {{restaurant.locationName}}
+  </li>
+{{/each}}
+</ul>
+
 {{outlet}}

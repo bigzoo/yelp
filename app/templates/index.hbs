@@ -1,10 +1,12 @@
 List of restaurants!
 <ul>
-{{#each model.restaurants as |restaurant|}}
-  <li>
-    {{restaurant.name}} in {{restaurant.locationName}}
-  </li>
-{{/each}}
+  {{#each model.restaurants as |restaurant|}}
+    <li>
+      {{#link-to "restaurant" restaurant restaurant=restaurant}}
+        {{restaurant.name}} in {{restaurant.locationName}}
+      {{/link-to}}
+    </li>
+  {{/each}}
 </ul>
 
 {{outlet}}

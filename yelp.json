@@ -1,0 +1,28 @@
+{
+  "restaurants": [
+    {
+        "name":"Mama Oliech",
+        "category":"african",
+        "shortDescription":"We bring you the best from all of Africa.",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "dateOpened":"1/1/2016",
+        "website":"www.mamaoliech.com",
+        "phone":"+254 722 222 222",
+        "locationName":"Kisumu",
+        "locationLongitude":36.7911047,
+        "locationLatitude":-1.2941262
+    },
+    {
+        "name":"Nyama Mama",
+        "category":"fast food",
+        "shortDescription":"A meaty experince you'll never forget.",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "dateOpened":"1/1/2017",
+        "website":"www.nyamamama.com",
+        "phone":"+254 700 111 111",
+        "locationName":"Nairobi",
+        "locationLongitude":36.80217,
+        "locationLatitude":-1.2658674
+    }
+  ]
+}

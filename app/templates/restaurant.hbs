@@ -7,5 +7,11 @@ More details about This restaurant!
 <b>{{model.shortDescription}}</b>
 <br> {{model.description}}
 <br>
+<h2>Reviews</h2>
+<ul>
+  {{#each model.reviews as |review|}}
+    {{review-tile review=review}}
+  {{/each}}
+</ul>
 {{new-review restaurant=model saveNewReview="saveNewReview"}}
 {{outlet}}

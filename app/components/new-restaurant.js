@@ -17,6 +17,7 @@ export default Ember.Component.extend({
       this.set('locationName',''),
       this.set('locationLongitude',''),
       this.set('locationLongitude',''),
+      this.set('image',''),
       this.set('addNewRestaurant',false)
     },
     reset(){
@@ -29,7 +30,8 @@ export default Ember.Component.extend({
       this.set('phone',''),
       this.set('locationName',''),
       this.set('locationLongitude',''),
-      this.set('locationLongitude','')
+      this.set('locationLongitude',''),
+      this.set('image','')
     },
     saveNewRestaurant(){
       var params = {
@@ -43,6 +45,7 @@ export default Ember.Component.extend({
         locationName: this.get('locationName'),
         locationLongitude: this.get('locationLongitude'),
         locationLatitude: this.get('locationLatitude'),
+        image: this.get('image')
       };
       this.set('name',''),
       this.set('category',''),
@@ -55,6 +58,7 @@ export default Ember.Component.extend({
       this.set('locationLongitude',''),
       this.set('locationLongitude',''),
       this.set('addNewRestaurant',false),
+      this.set('image'),
       this.sendAction('saveNewRestaurant',params)
     }
   }

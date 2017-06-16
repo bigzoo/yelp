@@ -4,6 +4,7 @@ List of restaurants!
     <li>
       {{#link-to "restaurant" restaurant restaurant=restaurant}}
         {{restaurant.name}} in {{restaurant.locationName}}
+        <img src={{restaurant.image}} alt={{restaurant.name}}>
       {{/link-to}}
     </li>
   {{/each}}

@@ -11,6 +11,7 @@ export default DS.Model.extend({
   locationName: DS.attr(),
   locationLongitude: DS.attr(),
   locationLatitude: DS.attr(),
+  image:DS.attr(),
   reviews: DS.hasMany('review',{async:true})
 
 });

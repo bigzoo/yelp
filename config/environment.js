@@ -16,6 +16,14 @@ module.exports = function(environment) {
         Date: false
       }
     },
+    firebase: {
+      apiKey: "AIzaSyCXvIzzo4wdw6tRvamzkfGCTAPufIQdSAM",
+      authDomain: "yelp-a1a7f.firebaseapp.com",
+      databaseURL: "https://yelp-a1a7f.firebaseio.com",
+      projectId: "yelp-a1a7f",
+      storageBucket: "",
+      messagingSenderId: "981399302633"
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance

@@ -1,1 +1,4 @@
-{{yield}}
+<b>Favorite Restaurants!</b>
+{{#each favoriteList.restaurants as |restaurant|}}
+  {{restaurant.name}} in {{restaurant.locationName}}
+{{/each}}

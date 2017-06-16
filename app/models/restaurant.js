@@ -9,8 +9,8 @@ export default DS.Model.extend({
   website: DS.attr(),
   phone: DS.attr(),
   locationName: DS.attr(),
-  locationLongitude: DS.attr('number'),
-  locationLatitude: DS.attr('number'),
+  locationLongitude: DS.attr(''),
+  locationLatitude: DS.attr(''),
   reviews: DS.hasMany('review',{async:true})
 
 });

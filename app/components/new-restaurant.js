@@ -55,8 +55,7 @@ export default Ember.Component.extend({
       this.set('locationLongitude',''),
       this.set('locationLongitude',''),
       this.set('addNewRestaurant',false),
-      this.sendAction('saveNewRestaurant',params),
-      this.transitionTo('index')
+      this.sendAction('saveNewRestaurant',params)
     }
   }
 });

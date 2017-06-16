@@ -5,5 +5,12 @@ export default Ember.Route.extend({
     return Ember.RSVP.hash({
       restaurants: this.store.findAll('restaurant')
     })
+  },
+  actions:{
+    saveNewRestaurant(params){
+      var newRestaurant = this.store.createRecord('restaurant',params);
+      newRestaurant.save(),
+      this.transitionTo('index')
+    }
   }
 });

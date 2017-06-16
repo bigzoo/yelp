@@ -7,8 +7,8 @@ More details about This restaurant!
 <b>{{model.shortDescription}}</b>
 <br> {{model.description}}
 <br><img src={{model.image}} alt=model.name>
-<br>
-<h2>Reviews</h2>
+<br><button class="btn btn-submit" {{action 'addToFavorites' model}} >Add to favorites?</button>
+<br><h2>Reviews</h2>
 <ul>
   {{#each model.reviews as |review|}}
     {{review-tile review=review}}

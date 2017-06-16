@@ -52,11 +52,11 @@
       {{input value=locationLongitude id="locationLongitude"}}
     </div>
 
-
-    <button {{action 'saveRestaurant'}}>Save Restaurant</button>
+    <button {{action 'saveNewRestaurant'}}>Save Restaurant</button>
+    <button {{action 'cancel'}}>Cancel</button>
   </form>
 </div>
 
 {{else}}
-<button {{action 'restaurantFormShow'}}>New Restaurant</button>
+<button {{action 'restaurantFormShow'}}>Add A Restaurant!</button>
 {{/if}}
